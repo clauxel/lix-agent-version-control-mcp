@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.lixversion/lixversion-mcp",
-  "description": "Lix Agent Version Control is a hosted remote MCP for Lix.",
+  "title": "Lix Agent Version Control",
+  "description": "Lix Agent Version Control is a paid hosted remote MCP for Lix. It exposes Streamable HTTP tool calls, bearer-token access, public server-card metadata, usage logs, and receipt-oriented JSON for AI agent workflows.",
   "version": "1.0.0",
-  "website_url": "https://lixversion.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/lix-agent-version-control-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://lixversion.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/lix-agent-version-control-mcp",
+  "serverCardUrl": "https://lixversion.clauxel.com/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,16 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "Lix Agent Version Control MCP",
-      "server_card_url": "https://lixversion.clauxel.com/server-card.json"
-    }
-  }
+  "tags": [
+    "remote-mcp",
+    "paid-mcp",
+    "ai-agents",
+    "lix",
+    "lixversion"
+  ]
 }
